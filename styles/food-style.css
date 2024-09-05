@@ -1,0 +1,150 @@
+header{ 
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/pages/food-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .makanan{
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.175);
+  border-radius: 35px;
+  width: 95%;
+  margin: 50px 0;
+}
+
+main .makanan:nth-child(odd){
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.07));
+
+}
+
+main .makanan:nth-child(even){
+  background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.2));
+}
+
+main img{
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+main .box{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+main article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+  padding: 25px;
+}
+
+main article:nth-child(odd){
+  align-items: end;
+}
+
+
+main article h1{
+  font-family: kaushan script, sans-serif;
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main article p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+@media screen and (max-width:1280px) {
+  main .box{
+    flex-direction: column;
+  }
+
+  main img{
+    width: 100%;
+    border-radius: 15px;
+    order: -1;
+  }
+
+  main article{
+    margin: 10px;
+    padding: 10px;
+  }
+
+  main article:nth-child(odd), main article:nth-child(even){
+    align-items: center;
+  }
+
+  main article h1{
+    font-family: kaushan script, sans-serif;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  main article p{
+    font-family: poppins, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  main .box{
+    flex-direction: column;
+  }
+
+  main img{
+    width: 100%;
+    border-radius: 15px;
+    order: -1;
+  }
+
+  main article{
+    margin: 5px;
+    padding: 5px;
+  }
+
+  main article:nth-child(odd), main article:nth-child(even){
+    align-items: center;
+  }
+
+  main article h1{
+    font-family: kaushan script, sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  main article p{
+    font-family: poppins, sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+}
+

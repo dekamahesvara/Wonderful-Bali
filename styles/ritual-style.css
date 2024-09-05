@@ -1,0 +1,81 @@
+header{ 
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/pages/ritual-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .box{
+    width: 70%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.07));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 50px;
+
+}
+
+main .box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .box h1{
+    font-family: poppins, sans-serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+main .box p{
+    font-family: poppins, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+     text-align: justify;
+}
+
+@media screen and (max-width:1280px) {
+    main .box{
+        width: 80%;
+        margin: 25px;
+
+    }
+    
+    main .box h1{
+        font-size: 3rem;
+    }
+    
+    main .box p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    main .box{
+        width: 90%;
+        margin: 20px;
+    }
+    
+    main .box h1{
+        font-size: 2rem;
+    }
+    
+    main .box p{
+        font-size: 0.8rem;
+    }
+}

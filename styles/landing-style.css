@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&family=Quicksand:wght@500;700&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+header{
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/pages/landing-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header article{
+  background:  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header article h1{
+  font-family: kaushan script, sans-serif;
+  color: white;
+  font-size: 9rem;
+  font-weight: 700;
+  font-style: italic;
+  rotate: -5deg;
+}
+
+
+header article .box{
+  position: absolute;
+  top: 87%;
+  text-align: center;
+  text-decoration: none;
+}
+
+header article .box h3{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+header article .box i{
+  margin-top: 1em;
+  font-size: 2rem;
+  color: white;
+}
+
+main aside{
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main aside img{
+  height: 170px;
+  margin: 10px;
+}
+
+main aside h1{
+  font-family: kaushan script, sans-serif;
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+main .about{
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/pages/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .about article{
+  background:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+main .about .box{
+  width: 40%;
+  position: absolute;
+  left: 5%;
+}
+
+main .about article .box h1{
+  font-family: kaushan script, sans-serif;
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+main .about article .box p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+main .history {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/pages/history-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .history article{
+  background:  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+main .history article .box{
+  width: 40%;
+  position: absolute;
+  right: 5%;
+}
+
+main .history article .box h1{
+  font-family: kaushan script, sans-serif;
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: end;
+}
+
+main .history article .box p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+main .menu{
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 5rem;
+  padding: 5rem;
+}
+
+main .menu .menu1,.menu2,.menu3,.menu4{
+  position: relative;
+  text-align: center;
+  overflow: hidden; 
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+main .menu .menu1 .img{
+  background-image: url(../images/pages/food-menu.jpg);
+}
+
+main .menu .menu2 .img{
+  background-image: url(../images/pages/destination-menu.jpg);
+}
+
+main .menu .menu3 .img{
+  background-image: url(../images/pages/dance-menu.jpg);
+}
+
+main .menu .menu4 .img{
+  background-image: url(../images/pages/ritual-menu.jpg);
+}
+
+main .menu .img{
+  height: 100%;
+  width: 100%;
+  filter: brightness(30%);
+  transition: ease-in-out 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main .menu h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0%;
+  font-family: kaushan script, sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+main .menu1:hover h1, .menu2:hover h1, .menu3:hover h1, .menu4:hover h1{
+  color: white;
+  opacity: 100%;
+  transition: 0.3s;
+  text-shadow: 10px 15px 30px black;
+}
+
+main .menu1:hover .img, .menu2:hover .img, .menu3:hover .img, .menu4:hover .img{
+  filter: brightness(80%);
+  scale: 1.02;  
+}
+
+
+@media screen and (max-width:1280px) {
+
+  header article h1{
+    font-size: 5rem;
+  }
+
+  header article .box h3{
+    font-size: 1.5rem;
+  }
+  
+  header article .box i{
+    scale: 0.8;
+  }
+  
+  main .about .box{
+    width: 90%;
+  }
+  
+  main .about article .box h1{
+    font-size: 4rem;
+  }
+  
+  main .about article .box p{
+    font-size: 1rem;
+  }
+
+  main .history article .box{
+    width: 90%;
+  }
+  
+  main .history article .box h1{
+    font-size: 4rem;
+  }
+  
+  main .history article .box p{
+    font-size: 1rem;
+  }
+
+  main .menu{
+    grid-template-columns: repeat(1, 100%);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  header article .box{
+    top: 84%;
+  }
+
+  main .menu h1{
+    font-size: 6rem;
+  }
+
+  main aside img{
+    height: 125px;
+  }
+  
+  main aside h1{
+    font-size: 4.5rem;
+  }
+  
+
+}
+
+@media screen and (max-width:600px) {
+
+  header article h1{
+    font-size: 4rem;
+  }
+
+  header article .box h3{
+    font-size: 1.25rem;
+  }
+  
+  header article .box i{
+    scale: 0.6;
+  }
+
+  main .about article .box h1{
+    font-size: 3rem;
+  }
+  
+  main .about article .box p{
+    font-size: 0.8rem;
+  }
+
+  main .history article .box{
+    width: 90%;
+  }
+  
+  main .history article .box h1{
+    font-size: 3rem;
+  }
+  
+  main .history article .box p{
+    font-size: 0.8rem;
+  }
+
+  header article .box{
+    top: 85%;
+  }
+
+  main .menu h1{
+    font-size: 5rem;
+  }
+
+  
+  main aside img{
+    height: 100px;
+  }
+  
+  main aside h1{
+    font-size: 4rem;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  
+  header article h1{
+    font-size: 3rem;
+  }
+
+  header article .box h3{
+    font-size: 1.2rem;
+  }
+  
+  header article .box i{
+    scale: 0.5;
+  }
+
+  header article .box{
+    top: 85%;
+  }
+
+  main .menu h1{
+    font-size: 3.5rem;
+  }
+
+    
+  main aside img{
+    height: 75px;
+  }
+  
+  main aside h1{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width:400px) {
+  
+  header article h1{
+    font-size: 2.5rem;
+  }
+
+  header article .box h3{
+    font-size: 1rem;
+  }
+  
+  header article .box i{
+    scale: 0.5;
+  }
+
+  header article .box{
+    top: 83%;
+  }
+
+  main .about article .box h1{
+    font-size: 2rem;
+  }
+  
+  main .about article .box p{
+    font-size: 0.75rem;
+  }
+
+  main .history article .box{
+    width: 90%;
+  }
+  
+  main .history article .box h1{
+    font-size: 2rem;
+  }
+  
+  main .history article .box p{
+    font-size: 0.75rem;
+  }
+
+  main .menu h1{
+    font-size: 3.3rem;
+  }
+
+  main aside img{
+    height: 50px;
+  }
+  
+  main aside h1{
+    font-size: 2rem;
+  }
+}

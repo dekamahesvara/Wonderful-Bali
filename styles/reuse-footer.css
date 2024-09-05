@@ -1,0 +1,104 @@
+footer{
+    padding: 2em;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  footer .credit p,a{
+    color: white;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  .social{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .wrapper{
+    display: inline-flex;
+  }
+  
+  .wrapper .icon{
+    margin: 15px;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .wrapper .icon a{
+    height: 3.75rem;
+    width: 3.75rem;
+    background: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 400ms;
+  }
+  
+  .wrapper .icon a i{
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .wrapper .linkedin:hover a{
+    background: #2365c1;
+    transition: ease-in-out 300ms;
+  }
+  
+  .wrapper .instagram:hover a{
+    background: #fa0675;
+    transition: ease-in-out 300ms;
+  }
+  
+  .wrapper .github:hover a{
+    background: #4f93cc;
+    transition: ease-in-out 300ms;
+  }
+  
+  .wrapper .linkedin:hover  i, .wrapper .instagram:hover i, .wrapper .github:hover i  {
+    transform: scale(1.1);
+    transition: ease-in-out 300ms;
+    color: white;
+  }
+
+
+  @media screen and (max-width:1280px) {
+
+    footer .credit p,a{
+      font-size: 1rem;
+    }
+    
+    .wrapper .icon a{
+      height: 3rem;
+      width: 3rem;
+    }
+    
+    .wrapper .icon a i{
+      font-size: 1.7rem;
+    }
+
+  }
+
+  @media screen and (max-width:600px) {
+    footer .credit p,a{
+      font-size: 0.9rem;
+    }
+    
+    .wrapper .icon a{
+      height: 2.7rem;
+      width: 2.7rem;
+    }
+    
+    .wrapper .icon a i{
+      font-size: 1.7rem;
+    }
+
+  }

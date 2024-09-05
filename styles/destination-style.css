@@ -1,0 +1,154 @@
+header{ 
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/pages/destination-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem;
+  gap: 5rem;
+}
+
+main .destination{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.07));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  border-radius: 35px;
+}
+
+main .destination a{
+  position: relative;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+}
+
+main .destination a i{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+main .destination a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+main .destination a:hover img{
+  opacity: 40%;
+  scale: 1.03 ;
+}
+
+main .destination a:hover i{
+  opacity: 100;
+}
+
+main .destination .text h1{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+main .destination .text p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+@media screen and (max-width:1820px) {
+  main{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+main .destination .text h1{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main .destination .text p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+}
+
+@media screen and (max-width:1280px) {
+  main{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+main .destination .text h1{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+main .destination .text p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+}
+
+@media screen and (max-width:900px) {
+  main{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+main .destination .text h1{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+main .destination .text p{
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+}
